@@ -181,7 +181,7 @@ const Signup = () => {
         <div className="flex items-center justify-center min-h-screen">
             <form onSubmit={loginSubmitHandler} className="md:p-8 w-full max-w-md rounded-lg md:border border-gray-200 mx-4">
                 <div className="mb-4">
-                    <h1 className="font-bold text-2xl">PatelEats</h1>
+                    <h1 className="font-bold text-2xl">ANTIMA-FAST-FOOD</h1>
                 </div>
                 <div className="mb-4">
                     <div className="relative">

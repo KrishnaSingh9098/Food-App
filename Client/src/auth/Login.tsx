@@ -51,7 +51,7 @@ const Login = () => {
         onSubmit={loginSubmitHandler}
       >
         <div className="mb-4">
-          <h1 className="font-bold text-2xl">ANTIMA-EATS</h1>
+          <h1 className="font-bold text-2xl">ANTIMA-FAST-FOOD</h1>
         </div>
         <div className="relative mb-4">
           <Label htmlFor="email" className="block mb-1">
