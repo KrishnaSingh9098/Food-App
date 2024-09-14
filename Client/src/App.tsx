@@ -8,10 +8,11 @@ import Signup from './auth/Signup';
 import ResetPassword from './auth/ResetPassword';
 import ForgotPassword from './auth/ForgetPassword';
 import VerifyEmail from './auth/VerifyEmail';
-import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import MainLayout from './layout/MainLayout';
 import Profile from './Components/Profile';
+import SearchPage from './Components/SearchPage';
+
 
 const appRouter = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ const appRouter = createBrowserRouter([
     {
       path:"/profile",
       element:<Profile/>
-    }
+    },
+    {
+      path: "/search/:text",
+      element: <SearchPage/>,
+    },
   ]
   },
   {
