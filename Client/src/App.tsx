@@ -12,7 +12,9 @@ import HeroSection from './Components/HeroSection';
 import MainLayout from './layout/MainLayout';
 import Profile from './Components/Profile';
 import SearchPage from './Components/SearchPage';
-
+import RestraurantDetail from './Components/RestaurantDetail';
+import Cart from './Components/Cart';
+import Restaurant from './admin/Restaurant';
 
 const appRouter = createBrowserRouter([
   {
@@ -31,6 +33,31 @@ const appRouter = createBrowserRouter([
       path: "/search/:text",
       element: <SearchPage/>,
     },
+    {
+      path: "/restraurant/:id",
+      element: <RestraurantDetail/>
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
+    },
+    // {
+    //   path: "/order/status",
+    //   element: <Success />,
+    // },
+    // admin services start from here
+    {
+      path: "/admin/restaurant",
+      element:<Restaurant />,
+    },
+    // {
+    //   path: "/admin/menu",
+    //   element:<AdminRoute><AddMenu /></AdminRoute>,
+    // },
+    // {
+    //   path: "/admin/orders",
+    //   element:<AdminRoute><Orders /></AdminRoute>,
+    // },
   ]
   },
   {
